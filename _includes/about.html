@@ -1,13 +1,15 @@
 <section>
-  <h3>Die Kanzlei</h3>
+  <h3 id="kanzlei">Die Kanzlei</h3>
 
-  <div class="icon-lockup">
-
+  <div class="wrap">
+    <div class="icon-house">{% include icons/house.html %}</div>
+    <div class="icon-rings">{% include icons/rings.html %}</div>
+    <div class="icon-law">{% include icons/law.html %}</div>
+    <div class="icon-trafficlight">{% include icons/trafficlight.html %}</div>
+    <div class="icon-buildings">{% include icons/buildings.html %}</div>
   </div>
-  <p>
-    <strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</strong> Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
-  </p>
-  <div class="skill-lockup">
-    
+
+  <div class="blurb">
+    {{ site.data.site-config.diekanzlei }}
   </div>
 </section>

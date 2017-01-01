@@ -1,13 +1,23 @@
-h3
-  @extend %upper-bold
-  color: $gray
-  text-align: center
-  padding: 100px 0 30px
+.wrap
+  max-width: 780px
+  +display(flex)
+  margin: 0 auto
+  +align-items(center)
+  +justify-content(space-around)
 
-p
+[class^="icon-"]
+  +size(30px)
+  // background: #EAB79A
+  // border-radius: 10%
+  svg
+    // +size(50px)
+    viewBox: 10,0,45,50
+    fill: $gray
+
+.blurb
   max-width: 620px
   padding: 0 15px
-  margin: 50px auto
+  margin: 50px auto 50px
   font-size: 24px
   text-align: center
   font-weight: 300

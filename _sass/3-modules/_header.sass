@@ -1,14 +1,17 @@
 header
+  background-image: url(/assets/img/#{$bg-img})
+  @extend: %bg-img
+  background-position: center center
   height: 550px
-  background: url(../img/geri-bg.jpg) center center
-  background-size: cover
 
   .logo
-    // +size(30px)
+    // background: #EAB79A
+    // border-radius: 10%
     float: left
     margin: 20px 0 0 30px
     // border: 1px solid $gray
-    path
+    svg
+      // viewBox: 5,5,50,50
       fill: $gray
 
   .site-nav

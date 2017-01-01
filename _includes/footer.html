@@ -1,20 +1,20 @@
-<footer>
+<footer id="footer">
 
   <div class="lockup">
 
-    <div class="logo">{% include icons/logo1.html %}</div>
+    <div class="logo">{% include icons/{{site.data.site-config.logo}} %}</div>
 
     <div class="content-wrap">
       <nav class="footer-nav">
-        <a href="">Die Kanzlei</a>
-        <a href="">Fälle</a>
-        <a href="">Klienten</a>
-        <a href="">Kontakt</a>
+        {% for item in site.data.site-config.menu %}
+          <a href={{item.url}}>{{item.name}}</a>
+        {% endfor %}
       </nav>
 
       <p class="copyright">
-        Copyright 2016
+        {{site.data.site-config.copyright}}
       </p>
     </div>
+
   </div>
 </footer>

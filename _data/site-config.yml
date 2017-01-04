@@ -8,8 +8,8 @@ diekanzlei: <p><strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.<
 
 menu:
 - {name: Die Kanzlei, url: '#kanzlei'}
-- {name: Die Fäll, url: '#'}
-- {name: Die Klienten, url: '#'}
-- {name: Die Kontakt, url: '#'}
+# - {name: Causae, url: '#'}
+# - {name: Klienten, url: '#'}
+- {name: Kontakt, url: '#'}
 
 copyright: Copyright 2016

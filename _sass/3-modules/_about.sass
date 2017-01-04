@@ -5,14 +5,27 @@
   +align-items(center)
   +justify-content(space-around)
 
-[class^="icon-"]
-  +size(30px)
-  // background: #EAB79A
-  // border-radius: 10%
-  svg
-    // +size(50px)
-    viewBox: 10,0,45,50
-    fill: $gray
+  [class^="icon-"]
+    +size(30px)
+    // background: #EAB79A
+    // border-radius: 10%
+    svg
+      // +size(50px)
+      // viewBox: 10,0,45,50
+      fill: $gray
+
+    .tooltiptext
+      display: inline-block
+      visibility: hidden
+      background-color: $gray
+      color: lighten($gray, 50%)
+      width: 160px
+      padding: 5px 0
+      text-align: center
+      border-radius: 5px
+    &:hover
+      .tooltiptext
+        visibility: visible
 
 .blurb
   max-width: 620px

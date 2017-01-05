@@ -1,14 +1,15 @@
 .wrap
-  // max-width: 780px
+  max-width: 780px
   +display(flex)
-  // margin: 0 auto
+  margin: 0 auto
   +align-items(center)
   +justify-content(space-around)
   +clearfix
 
   [class^="icon-"]
+    display: block
     position: relative
-    +size(100px)
+    +size(70px)
     overflow: hidden
 
     svg
@@ -19,8 +20,8 @@
       text-align: center
       background: fade-out($gray, 0.3)
       border-radius: 5px
-      // +display(flex)
-      // +align-items(center)
+      +display(flex)
+      +align-items(center)
       +justify-content(space-around)
 
     .tooltiptext

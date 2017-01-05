@@ -4,28 +4,38 @@
   margin: 0 auto
   +align-items(center)
   +justify-content(space-around)
+  +clearfix
 
   [class^="icon-"]
-    +size(30px)
-    // background: #EAB79A
-    // border-radius: 10%
+    display: block
+    position: relative
+    +size(100px)
+    overflow: hidden
+
+    // @media screen and (max-width: 620px)
+    //   +size(50px)
+
     svg
-      // +size(50px)
-      // viewBox: 10,0,45,50
       fill: $gray
 
-    .tooltiptext
-      display: inline-block
-      visibility: hidden
-      background-color: $gray
-      color: lighten($gray, 50%)
-      width: 160px
-      padding: 5px 0
+    .overlay
+      +position(absolute, 100% 0px null 0px)
       text-align: center
+      background: fade-out($gray, 0.3)
       border-radius: 5px
-    &:hover
-      .tooltiptext
-        visibility: visible
+      +display(flex)
+      +align-items(center)
+      +justify-content(space-around)
+
+    .tooltiptext
+      font-size: 10px
+      @extend %upper-bold
+      color: lighten($gray, 70%)
+
+    &:hover .overlay
+      +position(absolute, 0px 0px 0px 0px)
+      // padding-top: 10px
+      +transition
 
 .blurb
   max-width: 620px

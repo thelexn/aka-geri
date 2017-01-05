@@ -1,19 +1,20 @@
 .wrap
   max-width: 780px
+  // text-align: center
   +display(flex)
-  margin: 0 auto
-  +align-items(center)
+  margin: 0 auto 0 auto
   +justify-content(space-around)
-  +clearfix
+  // +clearfix
+  background:
+    color: $yellow
 
   [class^="icon-"]
-    display: block
-    position: relative
+    display: inline-block
     +size(100px)
+    position: relative
     overflow: hidden
-
-    // @media screen and (max-width: 620px)
-    //   +size(50px)
+    @media screen and (max-width: 540px)
+      +size(50px)
 
     svg
       fill: $gray
@@ -26,6 +27,8 @@
       +display(flex)
       +align-items(center)
       +justify-content(space-around)
+      @media screen and (max-width: 540px)
+        display: none
 
     .tooltiptext
       font-size: 10px

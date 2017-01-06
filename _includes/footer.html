@@ -1,19 +1,24 @@
-<footer id="footer">
+<footer>
+  <div class="footer-wrap">
 
-  <div class="lockup">
+    <div class="lockup">
 
-    <div class="logo">{% include icons/{{site.data.site-config.logo}} %}</div>
+      <div class="logo">{% include icons/{{site.data.site-config.logo}} %}</div>
 
-    <div class="content-wrap">
-      <nav class="footer-nav">
-        {% for item in site.data.site-config.menu %}
-          <a href={{item.url}}>{{item.name}}</a>
-        {% endfor %}
-      </nav>
+      <div class="content-wrap">
 
-      <p class="copyright">
-        {{site.data.site-config.copyright}}
-      </p>
+        <nav class="footer-nav">
+          {% for item in site.data.site-config.menu %}
+            <a href={{item.url}}>{{item.name}}</a>
+          {% endfor %}
+        </nav>
+
+        <p class="copyright">
+          {{site.data.site-config.copyright}}
+        </p>
+
+      </div>
+
     </div>
 
   </div>

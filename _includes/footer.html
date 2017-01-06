@@ -1,10 +1,10 @@
-<footer id="footer">
-
-  <div class="lockup">
+<footer>
+  <div class="footer-wrap">
 
     <div class="logo">{% include icons/{{site.data.site-config.logo}} %}</div>
 
     <div class="content-wrap">
+
       <nav class="footer-nav">
         {% for item in site.data.site-config.menu %}
           <a href={{item.url}}>{{item.name}}</a>
@@ -14,6 +14,7 @@
       <p class="copyright">
         {{site.data.site-config.copyright}}
       </p>
+
     </div>
 
   </div>

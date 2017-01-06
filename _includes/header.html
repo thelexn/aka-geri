@@ -1,4 +1,5 @@
-<header id="header">
+<header>
+  <div class="header-wrap">
 
     <div class="logo">{% include icons/{{site.data.site-config.logo}} %}</div>
 
@@ -8,7 +9,15 @@
       {% endfor %}
     </nav>
 
-    <h1><span>{{ site.data.site-config.title | escape }}</span></h1>
-    <p class="kicker">{{ site.data.site-config.description}}</p>
+    <div class="headline">
+      <h1>
+        <span class=h1frame>
+          <span class="rd-line">{{ site.data.site-config.title-l1}}</span>
+          <span class="rd-line">{{ site.data.site-config.title-l2}}</span>
+        </span>
+      </h1>
+      <p class="kicker">{{ site.data.site-config.description }}</p>
+    </div>
 
+  </div>
 </header>

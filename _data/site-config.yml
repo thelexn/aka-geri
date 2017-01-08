@@ -1,18 +1,28 @@
 title: Kanzlei Dr. Albrecht
 title-l1: Kanzlei
 title-l2: Dr. Albrecht
-email: your-email@domain.com
+email: Kanzlei-Albrecht@gmx.at
+phone: 0043 1 7136302
 description: Dr. Albrecht - Ihr Verteidiger in Strafsachen im Herzen Wiens
 bg-img: Geri-bg.png
-logo: logo1.svg
+logo: logo.svg
 
-diekanzlei: <p><strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</strong> Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
-
+diekanzlei: <p><strong>Ich vertrete Sie </strong>in den Bereichen Miet- und Wohnrecht, Ehe- und Familienrecht,
+ Strafrecht, Handels- und Unternehmensrecht, Verkehrsrecht und bei Unfallschäden.<br/><br/>
+ <strong>Mein Schwerpunkt </strong>liegt dabei sowohl in der ausführlichen Beratung wie auch in
+ der durchsetzungsstarken Vertretung vor Gericht.<br/><br/>
+ <strong>Mein oberstes Prinzip </strong>dabei ist, Ihnen in allen
+ notwendigen Schritten zu Seite zu stehen und mit meiner langjährigen Erfahrung und viel
+ Einfühlungsvermögen auf Ihren individuellen Fall einzugehen. Ein professionelles Vorgehen steht
+ dabei immer an erster Stelle, vor allen Dingen darf aber die Menschlichkeit bei mir nicht zu kurz
+ kommen. <br/><br/>
+ <strong>Bei Fragen wie auch zur Terminvereinbarung </strong>für das Erstgespräch stehe ich Ihnen mit
+ meinem Team zu Verfügung.</p>
 
 menu:
-- {name: Die Kanzlei, url: '#kanzlei'}
+- {name: Die Kanzlei, url: '#about'}
 # - {name: Causae, url: '#'}
 # - {name: Klienten, url: '#'}
-- {name: Kontakt, url: '#'}
+- {name: Kontakt, url: '#contact'}
 
 copyright: Copyright 2016

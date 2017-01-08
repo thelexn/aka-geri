@@ -1,0 +1,40 @@
+.contact-wrap
+  max-width: 780px
+  // +display(flex)
+  margin: 0 auto 20px auto
+
+  .contact-links-wrap
+    +display(flex)
+    +justify-content(space-around)
+
+    [class^="contact-icon-"]
+      margin: 0px auto 50px auto
+      // border: 5px solid $gray
+      // border-radius: 50%
+      +size(70px)
+      +transition
+
+      &:hover
+        +transform(scale(1.2))
+
+      svg
+        display: block
+        // margin: 20% auto
+        // +size(50px)
+
+        path
+          fill: $gray
+
+  .bar
+    width: 300px
+    height: 0px
+    border-top: 2px solid $gray
+    margin: 0px auto 50px
+
+  .contact-map-wrap
+    +display(flex)
+    +justify-content(space-around)
+    iframe
+      width: 100%
+      height: 250px
+    margin-bottom: 50px

@@ -11,13 +11,13 @@
 
   .contact-links-wrap
     +display(flex)
-    +justify-content(space-around)
+    +justify-content(center)
 
     [class^="contact-icon-"]
-      margin: 0px auto 50px auto
-      // border: 5px solid $gray
-      // border-radius: 50%
-      +size(70px)
+      +justify-content(center)
+      display: block
+      margin-right: 20px
+      +size(20px)
       +transition
 
       &:hover
@@ -25,17 +25,18 @@
 
       svg
         display: block
-        // margin: 20% auto
-        // +size(50px)
-
         path
           fill: $gray
 
+    p
+      line-height: 20px
+      text-align: justify
+
   .bar
-    width: 300px
+    width: 150px
     height: 0px
-    border-top: 2px solid $gray
-    margin: 0px auto 50px
+    border-top: 3px solid $gray
+    margin: 20px auto 50px
 
   .contact-map-wrap
     +display(flex)

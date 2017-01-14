@@ -3,7 +3,6 @@
   text-align: center
   color: $gray
   padding: 100px 0 30px
-  text-decoration: underline
 
 .about-wrap
   max-width: 780px
@@ -14,7 +13,7 @@
 
   [class^="icon-"]
     display: inline-block
-    +size(100px)
+    +size(60px)
     position: relative
     overflow: hidden
     +perspective(100)
@@ -43,7 +42,8 @@
         display: none
 
     .tooltiptext
-      font-size: 10px
+      font-size: 9px
+      font-weight: 100
       @extend %upper-bold
       color: lighten($gray, 70%)
 

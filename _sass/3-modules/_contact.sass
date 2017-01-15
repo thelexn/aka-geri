@@ -29,8 +29,12 @@
           fill: $gray
 
     p
-      line-height: 20px
+      font-size: 20px
       text-align: justify
+      +transition
+      &:hover
+        +transform(scale(1.1))
+
 
   .bar
     width: 150px

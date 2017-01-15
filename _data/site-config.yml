@@ -9,6 +9,12 @@ description: Dr. Albrecht - Ihr Verteidiger in Strafsachen im Herzen Wiens
 bg-img: Geri-bg.png
 logo: logo.svg
 
+menu:
+- {name: Die Kanzlei, url: '#about'}
+# - {name: Causae, url: '#'}
+# - {name: Klienten, url: '#'}
+- {name: Kontakt, url: '#contact'}
+
 diekanzlei: <p><strong>Ich vertrete Sie </strong>in den Bereichen Miet- und Wohnrecht, Ehe- und Familienrecht,
  Strafrecht, Handels- und Unternehmensrecht, Verkehrsrecht und bei Unfallschäden.<br/><br/>
  <strong>Mein Schwerpunkt </strong>liegt dabei sowohl in der ausführlichen Beratung wie auch in
@@ -21,10 +27,6 @@ diekanzlei: <p><strong>Ich vertrete Sie </strong>in den Bereichen Miet- und Wohn
  <strong>Bei Fragen wie auch zur Terminvereinbarung </strong>für das Erstgespräch stehe ich Ihnen mit
  meinem Team zu Verfügung.</p>
 
-menu:
-- {name: Die Kanzlei, url: '#about'}
-# - {name: Causae, url: '#'}
-# - {name: Klienten, url: '#'}
-- {name: Kontakt, url: '#contact'}
+pr-email: Ruth.Albrecht@gmx.at
 
 copyright: Copyright 2017

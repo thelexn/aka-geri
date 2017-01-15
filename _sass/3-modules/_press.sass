@@ -1,0 +1,39 @@
+#press
+  @extend %upper-bold
+  text-align: center
+  color: $gray
+  padding: 100px 0 30px
+
+.press-wrap
+  max-width: 780px
+  margin: 0 auto 0 auto
+
+  .pr-contact
+    h4
+      @extend %upper-bold
+      text-align: center
+      color: $gray
+
+    a
+      max-width: 780px
+      padding: 10px 0 30px 30px
+      margin: 50px auto 50px
+      font-size: 24px
+      text-align: center
+      font-weight: 300
+      text-align: justify
+
+    .contact-icon-envelope
+      +justify-content(center)
+      display: block
+      margin-right: 20px
+      +size(20px)
+      +transition
+
+      &:hover
+        +transform(scale(1.2))
+
+      svg
+        display: block
+        path
+          fill: $gray

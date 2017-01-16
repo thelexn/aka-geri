@@ -4,22 +4,25 @@
   <div class="press-wrap">
 
     <h4>PR-Kontakt</h4>
-    <p>Für Presseanfragen wenden Sie sich bitte an Frau Mag. Ruth Albrecht:</p>
+    <p>Für Presseanfragen wenden Sie sich bitte an Frau Mag. Ruth Albrecht</p>
 
     <div class="pr-links-wrap">
 
       <div class="press-icon-envelope">
-        <a href="mailto:{{site.data.site-config.pr-email}}" title="{{site.data.site-config.pr-email}}">{% include icons/envelope.html %}</a>
+        <a href="mailto:{{site.data.site-config.pr-email}}" title="">{% include icons/envelope.html %}</a>
       </div>
       <p>
-        <a href="mailto:{{site.data.site-config.pr-email}}" title="{{site.data.site-config.pr-email}}">{{site.data.site-config.pr-email}}</a>
+        <a href="mailto:{{site.data.site-config.pr-email}}" title="">{{site.data.site-config.pr-email}}</a>
       </p>
 
     </div>
 
-    <div class="press-texts">
+    <hr class="bar" />
 
-      <p>Nachfolgend finden Sie einen Auszug der medialen Berichterstattung über Dr. Gerald Albrecht:</p>
+    <h4>Presseberichte</h4>
+    <p>Nachfolgend finden Sie einen Auszug der medialen Berichterstattung über Dr. Gerald Albrecht</p>
+
+    <div class="press-texts">
 
       <ul>
         {% for item in site.data.site-config.press %}

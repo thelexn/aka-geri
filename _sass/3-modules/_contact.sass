@@ -13,6 +13,13 @@
     +display(flex)
     +justify-content(center)
 
+    p
+      font-size: 20px
+      text-align: justify
+      +transition
+      &:hover
+        +transform(scale(1.1))
+
     [class^="contact-icon-"]
       +justify-content(center)
       display: block
@@ -27,14 +34,6 @@
         display: block
         path
           fill: $gray
-
-    p
-      font-size: 20px
-      text-align: justify
-      +transition
-      &:hover
-        +transform(scale(1.1))
-
 
   .bar
     width: 150px

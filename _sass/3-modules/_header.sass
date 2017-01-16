@@ -16,7 +16,7 @@
 
     svg
       +size(100%)
-      fill: $gray
+      fill: $site-color
 
   .site-nav
     float: left
@@ -38,7 +38,7 @@
       text-align: center
       font-size: 72px
       @extend %upper-bold
-      color: $site-color
+      color: $headline-color
       text-shadow: 2px 2px black
       letter-spacing: 0.05em
       margin-bottom: 20px
@@ -50,7 +50,7 @@
       .h1frame
         display: inline-block
         padding: 0.2em 0.5em
-        border: $site-color solid 10px
+        border: $headline-color solid 10px
         box-shadow: 2px 2px 2px black
 
       .rd-line
@@ -61,6 +61,6 @@
       font-size: 20px
       @extend %upper-bold
       letter-spacing: 0.05em
-      color: $site-color
+      color: $headline-color
       @media screen and (max-width: 640px)
         font-size: 3vw

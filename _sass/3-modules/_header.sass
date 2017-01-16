@@ -39,23 +39,23 @@
       font-size: 72px
       @extend %upper-bold
       color: $headline-color
-      text-shadow: 2px 2px black
+      text-shadow: 2px 2px $site-color
       letter-spacing: 0.05em
       margin-bottom: 20px
       clear: both
       padding-top: 210px
-      @media screen and (max-width: 1060px)
-        font-size: 10vw
+      @media screen and (max-width: 1035px)
+        font-size: 7vw
 
       .h1frame
         display: inline-block
         padding: 0.2em 0.5em
         border: $headline-color solid 10px
-        box-shadow: 2px 2px 2px black
+        box-shadow: 2px 2px 2px $site-color
 
-      .rd-line
-        display: inline-block
-
+      // .rd-line
+      //   display: inline-block
+      //
     .kicker
       text-align: center
       font-size: 20px

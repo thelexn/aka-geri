@@ -1,29 +1,35 @@
 #press
   @extend %upper-bold
   text-align: center
-  color: $gray
+  color: $site-color
   padding: 100px 0 30px
 
 .press-wrap
   max-width: 780px
-  margin: 0 auto 0 auto
+  margin: 0 auto 20px auto
 
-  .pr-contact
-    h4
-      @extend %upper-bold
-      text-align: center
-      color: $gray
+  h4
+    @extend %upper-bold
+    text-align: center
+    color: $site-color
 
-    a
-      max-width: 780px
-      padding: 10px 0 30px 30px
-      margin: 50px auto 50px
-      font-size: 24px
-      text-align: center
-      font-weight: 300
-      text-align: justify
+  p
+    font-size: 20px
+    text-align: center
 
-    .contact-icon-envelope
+  .bar
+    width: 150px
+    height: 0px
+    border-top: 3px solid $site-color
+    margin: 20px auto 50px
+
+
+
+  .pr-links-wrap
+    +display(flex)
+    +justify-content(center)
+
+    .press-icon-envelope
       +justify-content(center)
       display: block
       margin-right: 20px
@@ -36,4 +42,20 @@
       svg
         display: block
         path
-          fill: $gray
+          fill: $site-color
+
+    p
+      +transition
+      &:hover
+        +transform(scale(1.1))
+
+
+  .press-texts
+    ul
+      text-align: center
+      list-style: none
+      font-size: 20px
+      li
+        +transition
+        &:hover
+          +transform(scale(1.1))

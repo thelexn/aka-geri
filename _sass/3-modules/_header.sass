@@ -16,10 +16,10 @@
 
     svg
       +size(100%)
-      fill: $gray
+      fill: $site-color
 
   .site-nav
-    float: right
+    float: left
     margin: 30px 30px 0 0
     @media (max-width: 640px)
       float: none
@@ -38,29 +38,29 @@
       text-align: center
       font-size: 72px
       @extend %upper-bold
-      color: $site-color
-      text-shadow: 2px 2px black
+      color: $headline-color
+      text-shadow: 2px 2px $site-color
       letter-spacing: 0.05em
       margin-bottom: 20px
       clear: both
       padding-top: 210px
-      @media screen and (max-width: 1060px)
-        font-size: 10vw
+      @media screen and (max-width: 1035px)
+        font-size: 7vw
 
       .h1frame
         display: inline-block
         padding: 0.2em 0.5em
-        border: $site-color solid 10px
-        box-shadow: 2px 2px 2px black
+        border: $headline-color solid 10px
+        box-shadow: 2px 2px 2px $site-color
 
-      .rd-line
-        display: inline-block
-
+      // .rd-line
+      //   display: inline-block
+      //
     .kicker
       text-align: center
       font-size: 20px
       @extend %upper-bold
       letter-spacing: 0.05em
-      color: $site-color
+      color: $headline-color
       @media screen and (max-width: 640px)
         font-size: 3vw

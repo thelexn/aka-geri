@@ -1,7 +1,7 @@
 #about
   @extend %upper-bold
   text-align: center
-  color: $gray
+  color: $site-color
   padding: 100px 0 30px
 
 .about-wrap
@@ -22,13 +22,13 @@
 
     svg
       +size(100%)
-      fill: $gray
+      fill: $site-color
 
     .overlay
       +position(absolute, 0% 0px null 0px)
       height: 100%
       text-align: center
-      background: fade-out($gray, 0.3)
+      background: fade-out($site-color, 0.3)
       border-radius: 5px
       +display(flex)
       +align-items(center)
@@ -45,7 +45,7 @@
       font-size: 9px
       font-weight: 100
       @extend %upper-bold
-      color: lighten($gray, 70%)
+      color: lighten($site-color, 70%)
 
     &:hover .overlay
       // +position(absolute, 0px 0px 0px 0px)
@@ -57,7 +57,7 @@
   max-width: 780px
   padding: 0 15px
   margin: 50px auto 50px
-  font-size: 24px
+  font-size: 20px
   text-align: center
   font-weight: 300
   text-align: justify

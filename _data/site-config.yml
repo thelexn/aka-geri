@@ -6,14 +6,16 @@ phone: 0043 1 7136302
 address: Untere Viaduktgasse 10, 1030 Wien
 map: https://www.google.at/maps/place/Mr.+Dr.+Gerald+Albrecht/@48.2064703,16.3847183,17z/data=!3m1!4b1!4m5!3m4!1s0x476d077313e34d13:0x4f27537b29d3c433!8m2!3d48.2064703!4d16.386907
 description: Dr. Albrecht - Ihr Verteidiger in Strafsachen im Herzen Wiens
-bg-img: Geri-bg.png
+# bg-img: Geri-bg.png
+bg-img: bg-dr.albrecht.jpg
 logo: logo.svg
 
 menu:
 - {name: Die Kanzlei, url: '#about'}
-# - {name: Causae, url: '#'}
-# - {name: Klienten, url: '#'}
 - {name: Kontakt, url: '#contact'}
+- {name: Presse, url: '#press'}
+# - {name: Klienten, url: '#'}
+
 
 diekanzlei: <p><strong>Ich vertrete Sie </strong>in den Bereichen Miet- und Wohnrecht, Ehe- und Familienrecht,
  Strafrecht, Handels- und Unternehmensrecht, Verkehrsrecht und bei Unfallschäden.<br/><br/>
@@ -28,5 +30,10 @@ diekanzlei: <p><strong>Ich vertrete Sie </strong>in den Bereichen Miet- und Wohn
  meinem Team zu Verfügung.</p>
 
 pr-email: Ruth.Albrecht@gmx.at
+
+press:
+- {text: 'Profil, 11.02.2013', url: 'http://www.profil.at/home/entziehungsberechtigungen-diplomatische-affaere-obsorgestreit-352238'}
+- {text: 'Kronen Zeitung, 29.01.2006', url: 'http://www.krone.at/oesterreich/die-beichte-des-saliera-diebs-die-grosse-beichte-story-41817'}
+- {text: 'Profil, 28.01.2006', url: 'http://www.profil.at/home/saliera-sicherheitsrisiko-seipel-131779'}
 
 copyright: Copyright 2017

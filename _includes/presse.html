@@ -1,28 +1,33 @@
 <section>
-    <h3 id="press">Presse</h3>
+  <h3 id="press">Presse</h3>
 
   <div class="press-wrap">
 
-    <div class="pr-contact">
+    <h4>PR-Kontakt</h4>
+    <p>Für Presseanfragen wenden Sie sich bitte an Frau Mag. Ruth Albrecht</p>
 
-      <h4>PR-Kontakt</h4>
+    <div class="pr-links-wrap">
 
-      <p>Für Presseanfragen wenden Sie sich bitte an Frau Mag. Ruth Albrecht:</p>
-
-      <div class="contact-icon-envelope">
-        <a href="mailto:{{site.data.site-config.pr-email}}" title="{{site.data.site-config.pr-email}}">{% include icons/envelope.html %}</a>
+      <div class="press-icon-envelope">
+        <a href="mailto:{{site.data.site-config.pr-email}}" title="">{% include icons/envelope.html %}</a>
       </div>
-        <a href="mailto:{{site.data.site-config.pr-email}}" title="{{site.data.site-config.pr-email}}">{{site.data.site-config.pr-email}}</a>
+      <p>
+        <a href="mailto:{{site.data.site-config.pr-email}}" title="">{{site.data.site-config.pr-email}}</a>
+      </p>
 
     </div>
 
+    <hr class="bar" />
+
+    <h4>Presseberichte</h4>
+    <p>Nachfolgend finden Sie einen Auszug der medialen Berichterstattung über Dr. Gerald Albrecht</p>
+
     <div class="press-texts">
-      <p>Nachfolgend finden Sie einen Auszug der medialen Berichterstattung über Dr. Gerald Albrecht:</p>
-      <
+
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        {% for item in site.data.site-config.press %}
+          <li><a href={{item.url}}> {{item.text}} </a> </li>
+        {% endfor %}
       </ul>
     </div>
 

@@ -6,21 +6,14 @@
 
 .contact-wrap
   max-width: 780px
-  // +display(flex)
   margin: 0 auto
+  font-size: 20px
+  +justify-content(center)
 
   .contact-links-wrap
     +display(flex)
-    +justify-content(center)
 
-    p
-      font-size: 20px
-      +transition
-      &:hover
-        +transform(scale(1.1))
-
-    [class^="contact-icon-"]
-      +justify-content(center)
+    .contact-icon
       display: block
       margin-right: 20px
       +size(20px)
@@ -33,6 +26,23 @@
         display: block
         path
           fill: $site-color
+
+    .contact-text
+      +transition
+      &:hover
+        +transform(scale(1.1))
+
+    .contact-location
+      +transition
+      &:hover
+        +transform(scale(1.1))
+
+      svg
+        +size(23px)
+        path
+          fill: $site-color
+          +transition
+
 
   .bar
     width: 150px

@@ -8,21 +8,30 @@
   max-width: 780px
   margin: 0 auto
   font-size: 20px
-  +justify-content(center)
 
   .contact-links-wrap
     +display(flex)
+    padding-bottom: 20px
+    +justify-content(center)
 
-    .contact-icon
+
+    // .contact-icon
+    [class^="icon-"]
+      position: relative
       display: block
       margin-right: 20px
-      +size(20px)
+      +size(25px)
       +transition
 
       &:hover
         +transform(scale(1.2))
 
       svg
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
         display: block
         path
           fill: $site-color
@@ -32,13 +41,7 @@
       &:hover
         +transform(scale(1.1))
 
-    .contact-location
-      +transition
-      &:hover
-        +transform(scale(1.1))
-
       svg
-        +size(23px)
         path
           fill: $site-color
           +transition
@@ -56,4 +59,4 @@
     iframe
       width: 100%
       height: 250px
-    margin-bottom: 50px
+      margin-bottom: 50px

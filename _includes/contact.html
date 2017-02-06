@@ -6,27 +6,35 @@
 
     <ul>
       <li class="contact-list-item">
-          <div class="icon-email">
+          <div class="icon-wrap">
             <a href="mailto:{{site.data.site-config.email}}">{% include icons/envelope.html %}</a>
           </div>
-          <div class="contact-text">
+          <div class="text-wrap">
             <a href="mailto:{{site.data.site-config.email}}">{{site.data.site-config.email}}</a>
           </div>
       </li>
       <li class="contact-list-item">
-          <div class="icon-tel">
+          <div class="icon-wrap">
             <a href="tel:{{site.data.site-config.phone}}"><span>{% include icons/phone.html %}</span></a>
           </div>
-          <div class="contact-text">
+          <div class="text-wrap">
             <a href="tel:{{site.data.site-config.phone}}"><span>{{site.data.site-config.phone}}</span></a>
           </div>
       </li>
       <li class="contact-list-item">
-          <div class="icon-map">
-            <a href="tel:{{site.data.site-config.map}}"><span>{% include icons/map-marker.html %}</span></a>
+          <div class="icon-wrap">
+            <a href="{{site.data.site-config.map}}"><span>{% include icons/map-marker.html %}</span></a>
           </div>
-          <div class="contact-text">
-            <a href="tel:{{site.data.site-config.map}}"><span>{{site.data.site-config.address}}</span></a>
+          <div class="text-wrap">
+            <a href="{{site.data.site-config.map}}"><span>{{site.data.site-config.address}}</span></a>
+          </div>
+      </li>
+      <li class="contact-list-item">
+          <div class="icon-wrap">
+            <span>{% include icons/clock.html %}</span>
+          </div>
+          <div class="text-wrap">
+            <span>{{site.data.site-config.office-hours}}</span>
           </div>
       </li>
     </ul>

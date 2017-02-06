@@ -5,14 +5,17 @@
   padding: 100px 0 30px
 
 .contact-wrap
+  color: $site-color
   max-width: 780px
   margin: 0 auto
   font-size: 20px
+  +justify-content(space-arround)
 
   .contact-list-item
     +display(flex)
+    margin: 0 auto
+    width: 500px
     padding: 15px
-    +justify-content(center)
 
     [class^="icon-"]
       position: relative
@@ -27,16 +30,15 @@
       svg
         position: absolute
         left: 0
-        top: 0
+        top: -2px
         width: 100%
         height: 100%
         display: block
         path
           fill: $site-color
 
-    .contact-text
+    .text-wrap
       +transition
-      vertical-align: bottom
       &:hover
         +transform(scale(1.1))
 
@@ -54,7 +56,7 @@
 
   .contact-map-wrap
     +display(flex)
-    +justify-content(center)
+    // +justify-content(center)
     iframe
       width: 100%
       height: 250px

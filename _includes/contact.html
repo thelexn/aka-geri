@@ -6,34 +6,34 @@
 
     <div class="contact-links-wrap">
 
-      <div class="contact-icon-envelope">
+      <div class="icon-email">
         <a href="mailto:{{site.data.site-config.email}}">{% include icons/envelope.html %}</a>
       </div>
-      <p>
+      <div class="contact-text">
         <a href="mailto:{{site.data.site-config.email}}">{{site.data.site-config.email}}</a>
-      </p>
+      </div>
 
     </div>
 
     <div class="contact-links-wrap">
 
-      <div class="contact-icon-phone">
-        <a href="tel:{{site.data.site-config.phone}}">{% include icons/phone.html %}</a>
+      <div class="icon-tel">
+        <a href="tel:{{site.data.site-config.phone}}"><span>{% include icons/phone.html %}</span></a>
       </div>
-      <p>
-        <a href="tel:{{site.data.site-config.phone}}">{{site.data.site-config.phone}}</a>
-      </p>
+      <div class="contact-text">
+        <a href="tel:{{site.data.site-config.phone}}"><span>{{site.data.site-config.phone}}</span></a>
+      </div>
 
     </div>
 
     <div class="contact-links-wrap">
 
-      <div class="contact-icon-map">
-        <a href="{{site.data.site-config.map}}">{% include icons/map-marker.html %}</a>
+      <div class="icon-map">
+        <a href="tel:{{site.data.site-config.map}}"><span>{% include icons/map-marker.html %}</span></a>
       </div>
-      <p>
-        <a href="{{site.data.site-config.map}}">{{site.data.site-config.address}}</a>
-      </p>
+      <div class="contact-text">
+        <a href="tel:{{site.data.site-config.map}}"><span>{{site.data.site-config.address}}</span></a>
+      </div>
 
     </div>
 
@@ -46,7 +46,6 @@
         style="border:0">
       </iframe>
     </div>
-
 
   </div>
 

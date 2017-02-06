@@ -9,13 +9,11 @@
   margin: 0 auto
   font-size: 20px
 
-  .contact-links-wrap
+  .contact-list-item
     +display(flex)
-    padding-bottom: 20px
+    padding: 15px
     +justify-content(center)
 
-
-    // .contact-icon
     [class^="icon-"]
       position: relative
       display: block
@@ -38,6 +36,7 @@
 
     .contact-text
       +transition
+      vertical-align: bottom
       &:hover
         +transform(scale(1.1))
 
@@ -55,7 +54,7 @@
 
   .contact-map-wrap
     +display(flex)
-    +justify-content(space-around)
+    +justify-content(center)
     iframe
       width: 100%
       height: 250px

@@ -5,46 +5,18 @@
   <div class="contact-wrap">
 
     <ul>
-      <li class="contact-list-item">
-          <div class="icon-wrap">
-            <a href="mailto:{{site.data.site-config.email}}">{% include icons/envelope.html %}</a>
-          </div>
-          <div class="text-wrap">
-            <a href="mailto:{{site.data.site-config.email}}">{{site.data.site-config.email}}</a>
-          </div>
-      </li>
-      <li class="contact-list-item">
-          <div class="icon-wrap">
-            <a href="tel:{{site.data.site-config.phone}}"><span>{% include icons/phone.html %}</span></a>
-          </div>
-          <div class="text-wrap">
-            <a href="tel:{{site.data.site-config.phone}}"><span>{{site.data.site-config.phone}}</span></a>
-          </div>
-      </li>
-      <li class="contact-list-item">
-          <div class="icon-wrap">
-            <a href="{{site.data.site-config.map}}"><span>{% include icons/map-marker.html %}</span></a>
-          </div>
-          <div class="text-wrap">
-            <a href="{{site.data.site-config.map}}"><span>{{site.data.site-config.address}}</span></a>
-          </div>
-      </li>
-      <li class="contact-list-item">
-          <div class="icon-wrap different">
-            <span>{% include icons/clock.html %}</span>
-          </div>
-          <div class="text-wrap different">
-            <span>{{site.data.site-config.office-hours}}</span>
-          </div>
-      </li>
-      <li class="contact-list-item">
-          <div class="icon-wrap different">
-            <span>{% include icons/calendar.html %}</span>
-          </div>
-          <div class="text-wrap different">
-            <span>{{site.data.site-config.date-aggreement}}</span>
-          </div>
-      </li>
+      <a href="mailto:{{site.data.site-config.email}}">
+        <li><div>{% include icons/envelope.html %}</div> <p>{{site.data.site-config.email}}</p></li>
+      </a>
+      <a href="mailto:{{site.data.site-config.phone}}">
+        <li><div>{% include icons/phone.html %}</div> <p>{{site.data.site-config.phone}}</p></li>
+      </a>
+      <a href="mailto:{{site.data.site-config.map}}">
+        <li><div>{% include icons/map-marker.html %}</div> <p>{{site.data.site-config.address}}</p></li>
+      </a>
+
+      <li class="different"><div>{% include icons/clock.html %}</div> <p>{{site.data.site-config.office-hours}}</p></li>
+      <li class="different"><div>{% include icons/calendar.html %}</div> <p>{{site.data.site-config.date-aggreement}}</p></li>
     </ul>
 
     <hr class="bar" />

@@ -11,9 +11,9 @@ bg-img: bg-dr.albrecht.jpg
 logo: logo.svg
 
 menu:
-- {name: Die Kanzlei, url: '#about'}
-- {name: Kontakt, url: '#contact'}
-- {name: Presse, url: '#press'}
+- {name: Die Kanzlei, url: '#about-section'}
+- {name: Kontakt, url: '#contact-section'}
+- {name: Presse, url: '#press-section'}
 
 diekanzlei: <p><strong>Ich vertrete Sie </strong>in den Bereichen Miet- und Wohnrecht, Ehe- und Familienrecht,
  Strafrecht, Handels- und Unternehmensrecht, Verkehrsrecht und bei Unfallschäden.<br/><br/>

@@ -1,8 +1,13 @@
-#about
+#about-section
+  padding: 50px 0px
+  background-color: $section-colorlight
+
+#about-hl
   @extend %upper-bold
   text-align: center
   color: $site-color
-  padding: 100px 0 30px
+  padding-bottom: 30px
+  margin: 0
 
 .about-wrap
   max-width: 780px
@@ -15,7 +20,7 @@
     display: inline-block
     +size(60px)
     position: relative
-    overflow: hidden
+    // overflow: hidden
     +perspective(100)
     @media screen and (max-width: 548px)
       +size(50px)
@@ -33,9 +38,12 @@
       +display(flex)
       +align-items(center)
       +justify-content(space-around)
-      +transition(0.3s)
-      +transform(rotateX(100deg))
-      +transform-origin(center bottom)
+      // +transition(0.3s)
+      +transition(all 0.9s ease-out)
+      +transform(rotate3d(1,1,1,360deg))
+      // +transform(rotateX(180deg))
+      // +transform-origin(center bottom)
+      +transform-origin(center center)
       opacity: 0
 
       @media screen and (max-width: 548px)
@@ -50,14 +58,17 @@
     &:hover .overlay
       // +position(absolute, 0px 0px 0px 0px)
       top: 0%
-      +transform(rotateX(0deg))
+      +transform(rotate3d(1,1,10,0deg))
+      // +transform(rotateX(0deg))
       opacity: 1
 
 .blurb
   max-width: 780px
   padding: 0 15px
-  margin: 50px auto 50px
+  margin: 50px auto 0px
   font-size: 20px
   text-align: center
   font-weight: 300
   text-align: justify
+  p
+    margin: 0

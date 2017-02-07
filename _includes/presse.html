@@ -1,20 +1,17 @@
-<section>
-  <h3 id="press">Presse</h3>
+<section id="press-section">
+  <h3 id="press-hl">Presse</h3>
 
   <div class="press-wrap">
-
     <h4>PR-Kontakt</h4>
     <p>Für Presseanfragen wenden Sie sich bitte an Frau Mag. Ruth Albrecht</p>
 
     <div class="pr-links-wrap">
-
       <div class="press-icon-envelope">
         <a href="mailto:{{site.data.site-config.pr-email}}" title="">{% include icons/envelope.html %}</a>
       </div>
       <p>
         <a href="mailto:{{site.data.site-config.pr-email}}" title="">{{site.data.site-config.pr-email}}</a>
       </p>
-
     </div>
 
     <hr class="bar" />
@@ -23,14 +20,11 @@
     <p>Nachfolgend finden Sie einen Auszug der medialen Berichterstattung über Dr. Gerald Albrecht</p>
 
     <div class="press-texts">
-
       <ul>
         {% for item in site.data.site-config.press %}
           <li><a href={{item.url}}> {{item.text}} </a> </li>
         {% endfor %}
       </ul>
     </div>
-
   </div>
-
 </section>

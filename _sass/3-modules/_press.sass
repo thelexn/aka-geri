@@ -1,14 +1,20 @@
-#press
+#press-section
+  padding: 50px 0px
+  background-color: $section-colorlight
+
+#press-hl
   @extend %upper-bold
   text-align: center
   color: $site-color
-  padding: 100px 0 30px
+  padding-bottom: 30px
+  margin: 0
 
 .press-wrap
   max-width: 780px
-  margin: 0 auto 20px auto
+  margin: 0 auto 0 auto
 
   h4
+    margin-top: 0px
     @extend %upper-bold
     text-align: center
     color: $site-color
@@ -21,9 +27,7 @@
     width: 150px
     height: 0px
     border-top: 3px solid $site-color
-    margin: 20px auto 50px
-
-
+    margin: 20px auto 40px
 
   .pr-links-wrap
     +display(flex)
@@ -55,6 +59,7 @@
       text-align: center
       list-style: none
       font-size: 20px
+      margin: 0
       li
         +transition
         &:hover

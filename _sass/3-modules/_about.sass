@@ -20,7 +20,7 @@
     display: inline-block
     +size(60px)
     position: relative
-    overflow: hidden
+    // overflow: hidden
     +perspective(100)
     @media screen and (max-width: 548px)
       +size(50px)
@@ -38,9 +38,12 @@
       +display(flex)
       +align-items(center)
       +justify-content(space-around)
-      +transition(0.3s)
-      +transform(rotateX(100deg))
-      +transform-origin(center bottom)
+      // +transition(0.3s)
+      +transition(all 0.9s ease-out)
+      +transform(rotate3d(1,1,1,360deg))
+      // +transform(rotateX(180deg))
+      // +transform-origin(center bottom)
+      +transform-origin(center center)
       opacity: 0
 
       @media screen and (max-width: 548px)
@@ -55,7 +58,8 @@
     &:hover .overlay
       // +position(absolute, 0px 0px 0px 0px)
       top: 0%
-      +transform(rotateX(0deg))
+      +transform(rotate3d(1,1,10,0deg))
+      // +transform(rotateX(0deg))
       opacity: 1
 
 .blurb

@@ -7,21 +7,29 @@
   padding-bottom: 10px
 
   .logo
-    +size(40px)
+    position: relative
+    display: inline-block
+    +size(60px)
     float: left
     margin: 20px 0 0 30px
     @media (max-width: 640px)
+      display: block
       float: none
-      margin: auto
+      margin: 0 auto
       padding-top: 20px
 
     svg
-      +size(100%)
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      display: block
       fill: $site-color
 
   .site-nav
     float: left
-    margin: 30px 30px 0 0
+    margin: 17px 0 0 15px
     @media (max-width: 640px)
       float: none
       margin: auto
@@ -29,13 +37,13 @@
       text-align: center
     a
       display: inline-block
-      margin-left: 20px
-      font-size: 18px
+      padding: 0 15px
+      margin: 0
+      font-size: 20px
       @extend %upper-bold
       +transition
       &:hover
         +transform(scale(1.1))
-
 
   .headline
     h1
@@ -49,7 +57,7 @@
       clear: both
       padding-top: 210px
       @media screen and (max-width: 1035px)
-        font-size: 7vw
+        font-size: 8vw
 
       .h1frame
         display: inline-block
@@ -66,4 +74,4 @@
       letter-spacing: 0.05em
       color: $headline-color
       @media screen and (max-width: 640px)
-        font-size: 3vw
+        font-size: 4vw

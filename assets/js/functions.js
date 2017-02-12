@@ -4,7 +4,7 @@ $(function() {
 	$(window).on("load resize", function() {
 		// console.log(window.innerHeight + "-" + window.innerWidth);
 		$(".header-wrap").css("height", window.innerHeight);
-		if (window.innerWidth > 575){
+		if (window.innerWidth > 653){
 			$("#headline").css("top", window.innerHeight - 215);
 		} else {
 			$("#headline").css("top", window.innerHeight - 255);

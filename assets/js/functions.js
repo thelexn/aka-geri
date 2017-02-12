@@ -5,7 +5,7 @@ $(function() {
 		// console.log(window.innerHeight + "-" + window.innerWidth);
 		$(".header-wrap").css("height", window.innerHeight);
 		if (window.innerWidth > 653){
-			$("#headline").css("top", window.innerHeight - 215);
+			$("#headline").css("top", window.innerHeight - 220);
 		} else {
 			$("#headline").css("top", window.innerHeight - 255);
 		}

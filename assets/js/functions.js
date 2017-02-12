@@ -1,5 +1,10 @@
 $(function() {
 	smoothScroll(500);
+
+	$(window).on("load resize", function() {
+		$(".header-wrap").css("height", window.innerHeight);
+	});
+
 });
 
 function smoothScroll (duration) {
@@ -14,4 +19,5 @@ function smoothScroll (duration) {
 	        }, duration);
 	    }
 	});
+
 }

@@ -1,11 +1,11 @@
 $(function() {
 	smoothScroll(500);
 
-	$(window).on("load resize", function() {
+	$(window).on("load", function() {
 		// console.log(window.innerHeight + "-" + window.innerWidth);
 		$(".header-wrap").css("height", window.innerHeight);
-		if (window.innerWidth > 575){
-			$("#headline").css("top", window.innerHeight - 215);
+		if (window.innerWidth > 653){
+			$("#headline").css("top", window.innerHeight - 220);
 		} else {
 			$("#headline").css("top", window.innerHeight - 255);
 		}

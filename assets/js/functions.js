@@ -1,7 +1,7 @@
 $(function() {
 	smoothScroll(500);
 
-	$(window).on("load resize", function() {
+	$(window).on("load", function() {
 		// console.log(window.innerHeight + "-" + window.innerWidth);
 		$(".header-wrap").css("height", window.innerHeight);
 		if (window.innerWidth > 653){

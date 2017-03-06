@@ -7,12 +7,18 @@
         <a href="mailto:{{site.data.site-config.email}}">
           <div>{% include icons/envelope.html %}</div>
           <p>{{site.data.site-config.email}}</p>
-      </a>
+        </a>
       </li>
       <li>
-        <a href="tel:{{site.data.site-config.phone}}">
+        <a href="tel:{{site.data.site-config.phone1}}">
           <div>{% include icons/phone.html %}</div>
-          <p>{{site.data.site-config.phone}}</p>
+          <p>{{site.data.site-config.phone1}}</p>
+        </a>
+      </li>
+      <li>
+        <a href="tel:{{site.data.site-config.phone2}}">
+          <div>{% include icons/phone.html %}</div>
+          <p>{{site.data.site-config.phone2}}</p>
         </a>
       </li>
       <li>
@@ -21,6 +27,7 @@
           <p>{{site.data.site-config.address}}</p>
         </a>
       </li>
+      <li class="different"><div>{% include icons/fax.html %}</div> <p>{{site.data.site-config.fax}}</p></li>
       <li class="different"><div>{% include icons/clock.html %}</div> <p>{{site.data.site-config.office-hours}}</p></li>
       <li class="different"><div>{% include icons/calendar.html %}</div> <p>{{site.data.site-config.date-aggreement}}</p></li>
     </ul>

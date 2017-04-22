@@ -5,10 +5,12 @@
 
     <div class="content-wrap">
 
+
       <nav class="footer-nav">
-        {% for item in site.data.site-config.menu %}
+        {% include nav.html %}
+        <!-- {% for item in site.data.site-config.menu %}
           <a href={{item.url}}>{{item.name}}</a>
-        {% endfor %}
+        {% endfor %} -->
       </nav>
 
       <p class="copyright">

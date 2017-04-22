@@ -3,8 +3,9 @@
 
     <div class="logo">{% include icons/{{site.data.site-config.logo}} %}</div>
 
-    {% include nav.html %}
-
+    <nav class="site-nav">
+      {% include nav.html %}
+    </nav>
     <div id="headline">
       <h1><span>{{ site.data.site-config.title}}</span></h1>
       <p class="kicker">{{ site.data.site-config.description }}</p>

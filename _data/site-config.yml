@@ -15,6 +15,7 @@ menu:
 - {name: Die Kanzlei, url: '/#about-section'}
 - {name: Kontakt, url: '/#contact-section'}
 - {name: Presse, url: '/#press-section'}
+- {name: Impressum, url: '/impressum.html'}
 
 diekanzlei: <p><strong>Ich vertrete Sie </strong>in den Bereichen Ehe- und Familienrecht,
  Miet- und Wohnrecht, Strafrecht, Handels- und Unternehmensrecht, sowie auch
@@ -38,3 +39,19 @@ press:
 - {text: 'Profil, 28.01.2006: Saliera - Sicherheitsrisiko Seipel'}
 
 copyright: Copyright 2017
+
+legal: |
+  <strong>Rechtsanwalt Dr. Gerald Albrecht</strong></br>
+  Verteidiger in Strafsachen</br>
+  </br>
+  Untere Viaduktgasse 10</br>
+  1030 Wien</br>
+  </br>
+  E-Mail: <a href="mailto:kanzlei.albrecht@gmx.at">kanzlei.albrecht@gmx.at</a></br>
+  Web: www.rechtsanwalt-albrecht.at</br>
+  </br>
+  Tel. <a href="tel:+43-1-713 26 17">+43-1-713 26 17</a></br>
+  Fax +43-1-712 02 18</br>
+  </br>
+  UID: ATU 11259804, DVR 0962716</br>
+  RA-Code: R120.052</br>

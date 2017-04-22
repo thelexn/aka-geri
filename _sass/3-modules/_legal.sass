@@ -1,0 +1,43 @@
+#legal-section
+  margin: 5% auto
+  padding: 50px 0px
+  background-color: darken($section-colorlight,3%)
+  box-shadow: 1px 5px 20px darken($section-color, 20%)
+  max-width: 780px
+
+  #legal-hl
+    @extend %upper-bold
+    text-align: center
+    color: $site-color
+    padding-bottom: 30px
+    margin: 0
+
+  .legal-wrap
+    // +display(flex)
+    color: $site-color
+    // box-shadow: 3px 3px 3px $gray
+    // max-width: 780px
+    margin: 0 auto
+    font-size: 20px
+    text-align: center
+    p
+      a
+        &:hover
+          +transition(all 1s)
+          color: $orange
+
+    .legal-nav
+      i
+        font-size: 36px
+        border: 2px solid $site-color
+        border-radius: 50px
+        box-shadow: 2px 6px 9px darken($section-color, 20%)
+        &:hover
+          +transition(all 1s)
+          color: $orange
+          background-color: darken($section-color, 5%)
+
+        &:active
+          +transition(all 0.5s)
+          box-shadow: 1px 1px 5px darken($section-color, 20%)
+          color: $site-color

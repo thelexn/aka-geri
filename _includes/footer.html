@@ -6,9 +6,7 @@
     <div class="content-wrap">
 
       <nav class="footer-nav">
-        {% for item in site.data.site-config.menu %}
-          <a href={{item.url}}>{{item.name}}</a>
-        {% endfor %}
+        {% include nav.html %}
       </nav>
 
       <p class="copyright">

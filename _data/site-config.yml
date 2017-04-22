@@ -12,9 +12,9 @@ bg-img: bg-dr.albrecht-sea.jpg
 logo: logo.svg
 
 menu:
-- {name: Die Kanzlei, url: '#about-section'}
-- {name: Kontakt, url: '#contact-section'}
-- {name: Presse, url: '#press-section'}
+- {name: Die Kanzlei, url: '/#about-section'}
+- {name: Kontakt, url: '/#contact-section'}
+- {name: Presse, url: '/#press-section'}
 
 diekanzlei: <p><strong>Ich vertrete Sie </strong>in den Bereichen Ehe- und Familienrecht,
  Miet- und Wohnrecht, Strafrecht, Handels- und Unternehmensrecht, sowie auch

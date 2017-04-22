@@ -3,11 +3,7 @@
 
     <div class="logo">{% include icons/{{site.data.site-config.logo}} %}</div>
 
-    <nav class="site-nav">
-      {% for item in site.data.site-config.menu %}
-        <a href={{item.url}}>{{item.name}}</a>
-      {% endfor %}
-    </nav>
+    {% include nav.html %}
 
     <div id="headline">
       <h1><span>{{ site.data.site-config.title}}</span></h1>

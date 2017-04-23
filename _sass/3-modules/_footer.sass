@@ -44,11 +44,16 @@ footer
           padding: 0 15px
           @extend %upper-bold
           +transition
+          text-shadow: 1px 1px lighten($site-color, 30%)
           &:hover
             +transform(scale(1.1))
+            text-shadow: 3px 3px lighten($site-color, 40%)
           @media (max-width: 402px)
             display: block
             padding-bottom: 7px
+          &:active
+            +transform(scale(1.05))
+            text-shadow: 1px 1px lighten($site-color, 30%)
 
       .footer-attachment
         margin: 0

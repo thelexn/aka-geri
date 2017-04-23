@@ -17,7 +17,6 @@ footer
         display: block
         float: none
         margin: 0 auto
-        // padding-top: 20px
       svg
         position: absolute
         left: 0
@@ -56,6 +55,8 @@ footer
         font-size: 12px
         color: $site-color
         a
+          display: inline-block
           +transition
           &:hover
-            color: $orange
+            +transform(scaley(1.1))
+            font-weight: bolder

@@ -10,7 +10,7 @@ map: https://www.google.at/maps/place/Mr.+Dr.+Gerald+Albrecht/@48.2064703,16.384
 description: Dr. Albrecht - Ihr Verteidiger in Strafsachen im Herzen Wiens
 bg-header: bg-dr.albrecht-sea.jpg
 bg-footer: bg-footer.jpg
-logo: logo.svg
+logo: logo10.svg
 
 menu:
 - {name: Die Kanzlei, url: '#about-section'}

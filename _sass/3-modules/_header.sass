@@ -45,8 +45,14 @@
       font-size: 20px
       @extend %upper-bold
       +transition
+      text-shadow: 1px 1px lighten($site-color, 30%)
       &:hover
         +transform(scale(1.1))
+        text-shadow: 3px 3px lighten($site-color, 40%)
+      &:active
+        +transform(scale(1.05))
+        text-shadow: 1px 1px lighten($site-color, 30%)
+
       @media (max-width: 490px)
         padding: 0 5px
       @media (max-width: 430px)

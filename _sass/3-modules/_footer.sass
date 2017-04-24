@@ -8,6 +8,7 @@ footer
     +clearfix
 
     .logo
+      // visibility: hidden
       position: relative
       display: inline-block
       +size(35px)
@@ -46,8 +47,8 @@ footer
           padding: 0 15px
           @extend %upper-bold
           text-shadow: 1px 1px lighten($site-color, 30%)
+          +transition(all 0.5s)
           &:hover
-            +transition(all 0.5s)
             +transform(scale(1.1))
             text-shadow: 3px 3px lighten($site-color, 40%)
           @media (max-width: 402px)
@@ -65,7 +66,6 @@ footer
         color: $site-color
         a
           display: inline-block
-          +transition
+          +transition(all 0.5s)
           &:hover
-            +transform(scaley(1.1))
-            font-weight: bolder
+            +transform(scale(1.1))

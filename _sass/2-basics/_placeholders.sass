@@ -8,3 +8,16 @@
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
+
+%link-effects
+  color: lighten($site-color, 20%)
+  text-shadow: 1px 1px 1px #000
+  +transition(all 0.5s)
+
+%hover-effects
+  color: darken($site-color, 1%)
+  +transform(scale(1.2))
+  text-shadow: 3px 3px 10px #000
+%active-effects
+  +transform(scale(1.05))
+  text-shadow: 1px 1px 2px #000

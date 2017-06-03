@@ -46,26 +46,28 @@ footer
           display: inline-block
           padding: 0 15px
           @extend %upper-bold
-          text-shadow: 1px 1px lighten($site-color, 30%)
-          +transition(all 0.5s)
+          @extend %link-effects
           &:hover
-            +transform(scale(1.1))
-            text-shadow: 3px 3px lighten($site-color, 40%)
-          @media (max-width: 402px)
-            display: block
-            padding-bottom: 7px
+            color: lighten($site-color, 5%)
+            @extend %hover-effects
           &:active
-            +transform(scale(1.05))
-            text-shadow: 1px 1px lighten($site-color, 30%)
+            @extend %active-effects
+
+          // @media (max-width: 402px)
+            // display: block
+            // padding-bottom: 7px
 
       .footer-attachment
         margin: 0
         padding: 0 15px
         text-transform: uppercase
         font-size: 12px
+        font-weight: bolder
         color: $site-color
         a
           display: inline-block
-          +transition(all 0.5s)
+          @extend %link-effects
           &:hover
-            +transform(scale(1.1))
+            @extend %hover-effects
+          &:active
+            @extend %active-effects

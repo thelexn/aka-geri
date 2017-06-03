@@ -37,9 +37,6 @@
     margin: 0 auto
     padding-left: 0
     .press-icon-envelope
-      +transition
-      &:hover
-        +transform(scale(1.05))
       div
         float: left
         position: relative
@@ -55,9 +52,16 @@
           path
             fill: $site-color
       p
+        letter-spacing: 0.1em
         display: inline-block
         padding-top: 3px
         padding-left: 10px
+        @extend %link-effects
+        &:hover
+          @extend %hover-effects
+          +transform(scale(1.07))
+        &:active
+          @extend %active-effects
         @media (max-width: 450px)
           font-size: 4vw
           font-weight: 600

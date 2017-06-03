@@ -10,6 +10,12 @@
         </a>
       </li>
       <li>
+        <a target="_blank" href="{{site.data.site-config.map}}">
+          <div>{% include icons/location.html %}</div>
+          <p>{{site.data.site-config.address}}</p>
+        </a>
+      </li>
+      <li>
         <a href="tel:{{site.data.site-config.phone1}}">
           <div>{% include icons/phone.html %}</div>
           <p>{{site.data.site-config.phone1}}</p>
@@ -21,15 +27,9 @@
           <p>{{site.data.site-config.phone2}}</p>
         </a>
       </li>
-      <li class="different"><div>{% include icons/fax.html %}</div> <p>{{site.data.site-config.fax}}</p></li>
-      <li>
-        <a target="_blank" href="{{site.data.site-config.map}}">
-          <div>{% include icons/location.html %}</div>
-          <p>{{site.data.site-config.address}}</p>
-        </a>
-      </li>
-      <li class="different"><div>{% include icons/clock.html %}</div> <p>{{site.data.site-config.office-hours}}</p></li>
-      <li class="different"><div>{% include icons/calendar.html %}</div> <p>{{site.data.site-config.date-aggreement}}</p></li>
+      <li><div>{% include icons/fax.html %}</div> <p class="different">{{site.data.site-config.fax}}</p></li>
+      <li><div>{% include icons/clock.html %}</div> <p class="different">{{site.data.site-config.office-hours}}</p></li>
+      <li><div>{% include icons/calendar.html %}</div> <p class="different">{{site.data.site-config.date-aggreement}}</p></li>
     </ul>
 
     <hr class="bar" />

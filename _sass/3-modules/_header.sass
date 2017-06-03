@@ -2,7 +2,7 @@
   @extend %bg-img
   background-image: url(/assets/img/#{$header-img})
   background-attachment: fixed
-  background-position: center
+  background-position: center top
   height: 100vh
   padding: 10px 0
 
@@ -34,7 +34,7 @@
       fill: $site-color
 
   .site-nav
-    float: left
+    float: right
     margin: 20px 0 0 15px
     @media (max-width: 435px)
       +transition(all 1s)
@@ -45,16 +45,15 @@
       display: inline-block
       padding: 0 15px
       margin: 0
-      font-size: 20px
+      letter-spacing: 0.08em
+      font-size: 22px
       @extend %upper-bold
-      text-shadow: 1px 1px lighten($site-color, 30%)
-      +transition(all 0.5s)
+
+      @extend %link-effects
       &:hover
-        +transform(scale(1.1))
-        text-shadow: 3px 3px lighten($site-color, 40%)
+        @extend %hover-effects
       &:active
-        +transform(scale(1.05))
-        text-shadow: 1px 1px lighten($site-color, 30%)
+        @extend %active-effects
 
       @media (max-width: 540px)
         +transition(all 1s)

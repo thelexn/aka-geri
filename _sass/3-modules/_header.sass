@@ -47,6 +47,7 @@
       margin: 0
       letter-spacing: 0.08em
       font-size: 22px
+      text-shadow: 2px 2px 2px $black
       @extend %upper-bold
       @extend %link-effects
       &:hover
@@ -54,14 +55,12 @@
       &:active
         @extend %active-effects
 
-      @media (max-width: 1200px)
-        text-shadow: 1px 1px 1px $black
       @media (max-width: 540px)
         +transition(all 0.5s)
-        padding: 0 5px
+        padding: 0 6px
       @media (max-width: 480px)
         +transition(all 0.5s)
-        font-size: 17px
+        font-size: 18px
 
   #headline
     clear: both

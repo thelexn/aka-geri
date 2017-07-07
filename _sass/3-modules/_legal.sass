@@ -4,24 +4,21 @@
   background-color: darken($section-colorlight,3%)
   box-shadow: 1px 5px 20px darken($section-color, 20%)
   max-width: 780px
+  color: $site-color
 
   #legal-hl
     @extend %upper-bold
     text-align: center
-    color: $site-color
     padding-bottom: 30px
     margin: 0
 
   .legal-wrap
-    // +display(flex)
-    color: $site-color
-    // box-shadow: 3px 3px 3px $gray
-    // max-width: 780px
     margin: 0 auto
     font-size: 20px
     text-align: center
     p
       a
+        color: $site-color
         &:hover
           +transition(all 1s)
           color: $orange
@@ -46,7 +43,6 @@
         &:active
           +transition(all 0.5s)
           box-shadow: 1px 1px 4px darken($section-color, 20%)
-          color: $site-color
           +size(29px)
 
         svg

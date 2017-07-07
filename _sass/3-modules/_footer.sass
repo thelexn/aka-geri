@@ -5,6 +5,7 @@ footer
 
   .footer-wrap
     padding: 20px 0
+    color: $link-color
     +clearfix
 
     .logo
@@ -48,14 +49,9 @@ footer
           @extend %upper-bold
           @extend %link-effects
           &:hover
-            color: lighten($site-color, 5%)
             @extend %hover-effects
           &:active
             @extend %active-effects
-
-          // @media (max-width: 402px)
-            // display: block
-            // padding-bottom: 7px
 
       .footer-attachment
         margin: 0
@@ -63,7 +59,6 @@ footer
         text-transform: uppercase
         font-size: 12px
         font-weight: bolder
-        color: $site-color
         a
           display: inline-block
           @extend %link-effects

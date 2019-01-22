@@ -1,0 +1,54 @@
+#dp-section
+  margin: 2% auto
+  padding: 50px 0px
+  background-color: darken($section-colorlight,3%)
+  box-shadow: 1px 5px 20px darken($section-color, 20%)
+  max-width: 1200px
+  color: $site-color
+
+
+  .dp-wrap
+    margin: 0 auto
+    padding: 0 20px
+    font-size: 18px
+
+    #dp-hl
+      @extend %upper-bold
+      text-align: center
+      @media screen and (max-width: 1083px)
+        +transition(all 0.5s)
+        font-size: 6vw
+
+    h2
+      font-size: 20px
+
+    .dp-nav
+      position: absolute
+      display: flex
+      +justify-content(center)
+      div
+        position: relative
+        left: 10px
+        +size(30px)
+        border: 2px solid $site-color
+        border-radius: 50px
+        box-shadow: 4px 4px 4px darken($section-color, 20%)
+        &:hover
+          +transition(all 0.5s)
+          background-color: darken($section-color, 5%)
+          box-shadow: 7px 7px 9px darken($section-color, 20%)
+          +size(32px)
+
+        &:active
+          +transition(all 0.5s)
+          box-shadow: 1px 1px 4px darken($section-color, 20%)
+          +size(29px)
+
+        svg
+          position: absolute
+          left: 0
+          top: 0
+          width: 100%
+          height: 100%
+          // display: block
+          fill: $site-color

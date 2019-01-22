@@ -1,59 +1,25 @@
-title: Kanzlei Dr.&nbsp;Albrecht
+title: Rechtsanwalt Albrecht
+
+headline: Kanzlei Dr.&nbsp;Albrecht
 description: Dr. Gerald Albrecht - Ihr Rechtsanwalt und Verteidiger in Strafsachen<br/>
  im Herzen Wiens
-email: kanzlei.albrecht@gmx.at
-phone1: 0043-1-7136302
-phone2: 0043-1-7132617
-fax: 0043-1-7120218
-address: 1030 Wien, Untere Viaduktgasse 10/12
-office-hours: Mo-Fr 9:30-18:30 Uhr
-date-aggreement: Termin nach Vereinbarung
-map: https://www.google.com/maps/search/Rechtsanwalt+Dr.+Gerald+Albrecht+Untere+Viaduktgasse+10/12+1030+Wien
+
 bg-header: bg-dr.albrecht-office.jpg
 bg-footer: bg-footer.jpg
 logo: logo10.svg
 
-menu:
-- {name: Die Kanzlei, url: '#about-section'}
-- {name: Kontakt, url: '#contact-section'}
-- {name: Presse, url: '#press-section'}
-
-diekanzlei: <p><strong>Ich vertrete Sie </strong>in den Bereichen Ehe- und Familienrecht,
- Miet- und Wohnrecht, Strafrecht, Handels- und Unternehmensrecht, sowie auch
- bei außergerichtlicher Schadensabwicklung von Personen- und Sachschäden
- nach Verkehrsunfällen bzw. der Opfervertretung.<br/><br/>
- <strong>Mein Schwerpunkt </strong>liegt dabei in der ausführlichen persönlichen Beratung
- sowohl außergerichtlich als auch vor Gericht.<br/><br/>
- <strong>Mein oberstes Prinzip </strong>ist, Ihnen in allen
- notwendigen Schritten zur Seite zu stehen und mit meiner langjährigen Erfahrung und mit
- Einfühlungsvermögen auf Ihren individuellen Fall einzugehen. Mein professionelles Vorgehen steht
- immer an erster Stelle, wobei mir der persönliche Kontakt zu meinen Klienten besonders
- wichtig ist. <br/><br/>
- <strong>Bei rechtlichen Fragen</strong> stehe ich Ihnen mit meinem Team, auch zur Terminvereinbarung
- für das Erstgespräch, zur Verfügung.</p>
-
-pr-email: Ruth.Albrecht@gmx.at
-
-press:
-- {text: 'Profil, 11.02.2013: Diplomatische Affäre um Obsorgestreit'}
-- {text: 'Kronen Zeitung, 29.01.2006: Die Beichte des Saliera-Diebs'}
-- {text: 'Profil, 28.01.2006: Saliera - Sicherheitsrisiko Seipel'}
+nav:
+- name: Die Kanzlei
+  url: '#about-section'
+- name: Kontakt
+  url: '#contact-section'
+- name: Presse
+  url: '#press-section'
 
 copyright: Copyright 2017
-leagalnotice: /impressum.html
 
-legal: |
-  <strong>Rechtsanwalt Dr. Gerald Albrecht</strong></br>
-  Verteidiger in Strafsachen</br>
-  </br>
-  Untere Viaduktgasse 10</br>
-  1030 Wien</br>
-  </br>
-  E-Mail: <a href="mailto:kanzlei.albrecht@gmx.at">kanzlei.albrecht@gmx.at</a></br>
-  Web: <a href="/">www.rechtsanwalt-albrecht.at</a></br>
-  </br>
-  Tel. <a href="tel:+43-1-713 26 17">+43-1-713 26 17</a></br>
-  Fax +43-1-712 02 18</br>
-  </br>
-  UID: ATU 11259804, DVR 0962716</br>
-  RA-Code: R120.052</br>
+footernav:
+- name: IMPRESSUM
+  link: /impressum.html
+- name: DATENSCHUTZ
+  link: /datenschutz.html

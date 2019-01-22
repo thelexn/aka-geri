@@ -1,27 +1,32 @@
 <section id="press-section">
-  <h3 id="press-hl">Presse</h3>
+  <h3 id="press-hl">{{ site.data.press.headline }}</h3>
 
   <div class="press-wrap">
-    <h4>PR-Kontakt</h4>
-    <p>Für Presseanfragen wenden Sie sich bitte an Frau Mag. Ruth Albrecht.</p>
+
+    {% for item in site.data.press.pr %}
+      <h4>{{item.headline}}</h4>
+      <p>{{item.subline}}</p>
+    {% endfor %}
 
     <div class="pr-links-wrap">
       <div class="press-icon-envelope">
-        <a href="mailto:{{site.data.site-config.pr-email}}">
+        <a href="mailto:{{site.data.press.pr-email}}">
           <div>{% include icons/envelope.html %}</div>
-          <p>{{site.data.site-config.pr-email}}</p>
+          <p>{{site.data.press.pr-email}}</p>
         </a>
       </div>
     </div>
 
     <hr class="bar" />
 
-    <h4>Presseberichte</h4>
-    <p>Nachfolgend finden Sie einen Auszug der medialen Berichterstattung.</p>
+    {% for item in site.data.press.pressreport %}
+      <h4>{{item.headline}}</h4>
+      <p>{{item.subline}}</p>
+    {% endfor %}
 
     <div class="press-texts">
       <ul>
-        {% for item in site.data.site-config.press %}
+        {% for item in site.data.press.reports %}
           <li>{{item.text}}</li>
         {% endfor %}
       </ul>

@@ -1,35 +1,35 @@
 <section id="contact-section">
-  <h3 id="contact-hl">Kontakt</h3>
+  <h3 id="contact-hl">{{ site.data.contact.headline }}</h3>
 
   <div class="contact-wrap">
     <ul>
       <li>
-        <a href="mailto:{{site.data.site-config.email}}">
+        <a href="mailto:{{site.data.contact.email}}">
           <div>{% include icons/envelope.html %}</div>
-          <p>{{site.data.site-config.email}}</p>
+          <p>{{site.data.contact.email}}</p>
         </a>
       </li>
       <li>
-        <a target="_blank" href="{{site.data.site-config.map}}">
+        <a target="_blank" href="{{site.data.contact.map}}">
           <div>{% include icons/location.html %}</div>
-          <p>{{site.data.site-config.address}}</p>
+          <p>{{site.data.contact.address}}</p>
         </a>
       </li>
       <li>
-        <a href="tel:{{site.data.site-config.phone1}}">
+        <a href="tel:{{site.data.contact.phone1}}">
           <div>{% include icons/phone.html %}</div>
-          <p>{{site.data.site-config.phone1}}</p>
+          <p>{{site.data.contact.phone1}}</p>
         </a>
       </li>
       <li>
-        <a href="tel:{{site.data.site-config.phone2}}">
+        <a href="tel:{{site.data.contact.phone2}}">
           <div>{% include icons/phone.html %}</div>
-          <p>{{site.data.site-config.phone2}}</p>
+          <p>{{site.data.contact.phone2}}</p>
         </a>
       </li>
-      <li><div>{% include icons/fax.html %}</div> <p class="different">{{site.data.site-config.fax}}</p></li>
-      <li><div>{% include icons/clock.html %}</div> <p class="different">{{site.data.site-config.office-hours}}</p></li>
-      <li><div>{% include icons/calendar.html %}</div> <p class="different">{{site.data.site-config.date-aggreement}}</p></li>
+      <li><div>{% include icons/fax.html %}</div> <p class="different">{{site.data.contact.fax}}</p></li>
+      <li><div>{% include icons/clock.html %}</div> <p class="different">{{site.data.contact.office-hours}}</p></li>
+      <li><div>{% include icons/calendar.html %}</div> <p class="different">{{site.data.contact.date-aggreement}}</p></li>
     </ul>
   </div>
 </section>

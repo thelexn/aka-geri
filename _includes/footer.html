@@ -11,8 +11,17 @@
 
       <span class="footer-attachment">
         {{site.data.site-config.copyright}}
-        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-        <a href="{{site.data.site-config.leagalnotice}}">Impressum</a>
+
+        {% for item in site.data.site-config.footernav %}
+        
+          <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+
+          <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+            {{ item.name }}
+          </a>
+          
+        {% endfor %}
+
       </span>
     </div>
 

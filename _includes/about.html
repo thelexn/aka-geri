@@ -1,30 +1,38 @@
 <section id="about-section">
-  <h3 id="about-hl">Die Kanzlei</h3>
+
+  <h3 id="about-hl">{{ site.data.about.headline }}</h3>
 
   <div class="about-wrap">
+
     <div class="icon-house">
       {% include icons/house.html %}
       <div class="overlay"><span class="tooltiptext">Miet- <br />und <br />Wohnrecht</span></div>
     </div>
+    
     <div class="icon-rings">
       {% include icons/rings.html %}
       <div class="overlay"><span class="tooltiptext">Ehe- <br />und <br />Familien-<br />recht</span></div>
     </div>
+    
     <div class="icon-law">
       {% include icons/law.html %}
       <div class="overlay"><span class="tooltiptext">Strafrecht</span></div>
     </div>
+    
     <div class="icon-buildings">
       {% include icons/buildings.html %}
       <div class="overlay"><span class="tooltiptext">Handels- <br />und <br />Unter-<br />nehmens-<br />recht</span></div>
     </div>
+    
     <div class="icon-trafficlight">
       {% include icons/trafficlight.html %}
       <div class="overlay"><span class="tooltiptext">Verkehrs-<br />recht <br />Unfall-<br />schäden</span></div>
     </div>
+  
   </div>
 
   <div class="blurb">
-    {{ site.data.site-config.diekanzlei }}
+    {{ site.data.about.dieKanzlei }}
   </div>
+
 </section>
